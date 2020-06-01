@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#slides{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#slides #prev{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 1;
+    color: blue;
+    font-size: 46px;
+    font-weight: bold;
+    margin-left: 20px;
+    cursor: pointer
+}
+
+#slides #next{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: 1;
+    color: blue;
+    font-size: 46px;
+    font-weight: bold;
+    margin-right: 20px;
+    cursor: pointer
+}
+
+#slide1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://definitivadigital.com.br/wp-content/uploads/2019/08/dd-icon1.png');
+    background-size: 30% 30%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#slide2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://definitivadigital.com.br/wp-content/uploads/2019/08/dd-icon2.png');
+    background-size: 30% 30%;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide-hide{
+    opacity: 0;
+    transform: translate3d(-100px, 0, 0);
+    transition: 1.5s;
+}
+
+.slide-show{
+    opacity: 1;
+    transform: translate3d( 0, 0, 0);
+}
+
+.slide-content{
+    padding: 5% 0;
+    width: 80%;
+    background-color: #00000055;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+h2{
+    color: white;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+p{
+    color: white;
+    font-weight: 300;
+}
